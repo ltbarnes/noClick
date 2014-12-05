@@ -8,7 +8,7 @@ In the terminal type:
 
 java -version
 
-and make sure you have java version "1.7.0_..." and a Java SE Runtime environment. If not the latest Java 1.7 SDK downloads can be found here:
+and make sure you have java version "1.7.0_..." and a Java SE Runtime environment. The latest Java 1.7 SDK downloads can be found here:
 
 http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
 
@@ -18,9 +18,9 @@ cd /your/path/to/NoClickDemo
 
 To compile and run the program type the following commands into the terminal exactly as they are shown below:
 
-javac -d bin -sourcepath src -cp lib/noclick.jar src/barnes/cs130dev/DemoApp.java
+javac -d . -sourcepath src -cp lib/noclick.jar src/barnes/cs130dev/DemoApp.java
 
-java -cp bin:lib/noclick.jar barnes.cs130dev.DemoApp
+java -cp .:lib/noclick.jar barnes.cs130dev.DemoApp
 
 The DemoApp program should now be up and running on your Mac! To run the program again after closing just type the last line into the terminal again.
 
