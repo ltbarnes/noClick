@@ -71,7 +71,7 @@ public class NoClick extends JLayeredPane {
 		});
 
 		_currName = System.getProperty("user.home");
-		_currentDir = new Directory((new File(_currName)).getParentFile());
+		_currentDir = new Directory((new File(_currName)));
 		this.add(_currentDir, CURR_DEPTH, 0);
 
 		_selectedLabel = new JLabel("", null, JLabel.CENTER);

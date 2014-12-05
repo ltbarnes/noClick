@@ -93,7 +93,8 @@ public class Directory extends JPanel {
 
 				image = new BufferedImage(16, 16, BufferedImage.TYPE_INT_ARGB);
 				Graphics g = image.getGraphics();
-				icon.paintIcon(null, g, 0, 0);
+				if (icon != null)
+					icon.paintIcon(null, g, 0, 0);
 
 				icon = new ImageIcon(image.getScaledInstance(32, 32, Image.SCALE_SMOOTH));
 				iconS = new ImageIcon(image.getScaledInstance(72, 72, Image.SCALE_SMOOTH));
@@ -129,23 +130,23 @@ public class Directory extends JPanel {
 	public Directory reset() {
 		if (_dir != null)
 			return new Directory(_dir);
-		
+
 		Directory dir = new Directory(_parent.getFile());
 		dir.resetSize(getSize());
-		
+
 		for (int page = 1; page < _page; page++) {
 			dir = dir.getMore();
 		}
-		
+
 		return dir;
 	}
-	
+
 	public File getFile() {
 		if (_dir == null)
 			return _parent.getFile();
 		return _dir;
 	}
-	
+
 	public int getNextPage() {
 		return _page + 1;
 	}

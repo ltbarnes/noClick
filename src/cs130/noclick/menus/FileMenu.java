@@ -53,9 +53,11 @@ public class FileMenu extends Menu {
 					break;
 				case "Delete":
 					try {
-						Files.delete(e.file.toPath());
+						String trash = System.getProperty("user.home") + "/.Trash";
+						Files.move(e.file.toPath(), Paths.get(trash + "/" + e.file.getName()), StandardCopyOption.REPLACE_EXISTING);
 					} catch (IOException e1) {
-						System.err.println(e.file.getName() + " does not exist.");
+						e1.printStackTrace();
+//						System.err.println(e.file.getName() + " does not exist.");
 					}
 					_file = e.file;
 					break;
