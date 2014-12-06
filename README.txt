@@ -2,7 +2,7 @@ NO CLICK
 
 ####################### RUNNING THE DEMO #########################
 
-Open Terminal.app from the /Applications/Utilities/ folder (or by searching for it using spotlight [cmd + space]).
+Open the Terminal.app by finding it in the /Applications/Utilities/ folder or by searching for it using spotlight (cmd + space).
 
 In the terminal type:
 
@@ -12,15 +12,20 @@ and make sure you have java version "1.7.0_..." and a Java SE Runtime environmen
 
 http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
 
-To compile and run the program you first need to be in the NoClickDemo directory. In the terminal app type 'cd' then space then drag the NoClickFolder into the terminal window. Press enter:
+To compile and run the program you first need to be in the NoClickDemo directory.
 
-cd /your/path/to/NoClickDemo
+	1.	In the terminal type 'cd' then space then drag the NoClickFolder into the terminal window. Press enter.
 
-To compile and run the program type the following commands into the terminal exactly as they are shown below:
+		cd /your/path/to/NoClickDemo
 
-javac -d . -sourcepath src -cp lib/noclick.jar src/barnes/cs130dev/DemoApp.java
 
-java -cp .:lib/noclick.jar barnes.cs130dev.DemoApp
+	2.	To compile the program type the following command into the terminal:
 
-The DemoApp program should now be up and running on your Mac! To run the program again after closing just type the last line into the terminal again.
+		javac -d . -sourcepath src -cp lib/noclick.jar src/barnes/cs130dev/DemoApp.java
+
+	3. 	To run the program type:
+
+		java -cp .:lib/noclick.jar barnes.cs130dev.DemoApp
+
+	The DemoApp program should now be up and running on your Mac! To run the program again after closing just repeat step 3. If you close the terminal and reopen it make sure to repeat step 1 before attempting step 3 again.
 
