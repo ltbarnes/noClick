@@ -103,7 +103,7 @@ public class Directory extends JPanel {
 				_files.add(fl);
 			}
 		}
-		_totalPages = _files.size() / MAX_FILES_DISPLAYED + 1;
+		_totalPages = _files.size() / (MAX_FILES_DISPLAYED - 1) + 1;
 		checkFilesSize();
 	}
 
