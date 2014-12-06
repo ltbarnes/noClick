@@ -19,7 +19,7 @@ public class FileMenu extends Menu {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private static List<String> fileMenuActions = Arrays.asList("Open", "Open with...", "Copy", "Delete");
+	private static List<String> fileMenuActions = Arrays.asList("Open", "Copy", "Delete");
 
 	private boolean _active;
 	private File _file;
@@ -40,14 +40,12 @@ public class FileMenu extends Menu {
 						System.err.println("Can't open file: " + e.file.getName());
 					}
 					break;
-				case "Open with...":
-					break;
 				case "Copy":
 					try {
 						Files.copy(e.file.toPath(), Paths.get(e.file.getAbsolutePath() + " copy"),
 								StandardCopyOption.COPY_ATTRIBUTES);
 					} catch (IOException e1) {
-						System.err.println(e.file.getName() + " cannot be copied.");
+						System.err.println(e.file.getName() + " already exists.");
 					}
 					_file = e.file;
 					break;
@@ -56,8 +54,7 @@ public class FileMenu extends Menu {
 						String trash = System.getProperty("user.home") + "/.Trash";
 						Files.move(e.file.toPath(), Paths.get(trash + "/" + e.file.getName()), StandardCopyOption.REPLACE_EXISTING);
 					} catch (IOException e1) {
-						e1.printStackTrace();
-//						System.err.println(e.file.getName() + " does not exist.");
+						System.err.println(e.file.getName() + " cannot be deleted.");
 					}
 					_file = e.file;
 					break;
