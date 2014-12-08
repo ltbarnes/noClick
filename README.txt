@@ -27,7 +27,7 @@ To compile and run the program you first need to be in the NoClickDemo directory
 
 		cd /your/path/to/NoClickDemo
 
-	press enter.
+	Press enter.
 
 
 	2.
@@ -35,7 +35,7 @@ To compile and run the program you first need to be in the NoClickDemo directory
 
 		javac -d . -sourcepath src -cp lib/noclick.jar src/barnes/cs130dev/DemoApp.java
 
-	press enter.
+	Press enter.
 
 
 	3.
@@ -44,5 +44,5 @@ To compile and run the program you first need to be in the NoClickDemo directory
 
 		java -cp .:lib/noclick.jar barnes.cs130dev.DemoApp
 
-	press enter to start.
+	Press enter to start.
 
