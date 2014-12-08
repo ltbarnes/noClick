@@ -46,3 +46,31 @@ To compile and run the program you first need to be in the NoClickDemo directory
 
 	Press enter to start.
 
+
+
+######################### USING THE DEMO ###########################
+
+Select files and folders by moving the mouse around within the application. When the mouse hovers of an item it sticks to the cursor until another item is selected or an action is performed with the icon. To clear all items from the cursor drag the mouse to the cancel zone in the bottom left of the screen.
+
+The current directory and page number is displayed in the upper left corner of the screen.
+
+Actions:
+
+	Open a folder:
+		To descend into a folder drag its icon into the center of the app.
+
+	Open/Copy/Delete a file:
+		To open an options menu drag a file into the center of the app.
+		A menu will appear with options to open, copy, or delete a file.
+		Use the menu by dragging an option into the center or drag to the cancel area to leave.
+
+	Go to parent folder:
+		Drag the "Back" icon to the middle of the app.
+		(Can only be done for the first page of a folder)
+
+	Navigate between pages in a folder:
+		Drag the "Next" or "Previous" icon to the middle of the app.
+
+	Go to the Home Folder:
+		Drag the "Home" icon to the center of the app.
+
