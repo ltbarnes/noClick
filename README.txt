@@ -16,7 +16,7 @@ java version "1.7.0_71"
 Java(TM) SE Runtime Environment (build 1.7.0_71-b14)
 Java HotSpot(TM) 64-Bit Server VM (build 24.71-b01, mixed mode)
 
-and make sure you have java version "1.7.0_..." or higher. If you don't have java or you are using an earlier version you can download the latest Java 1.7 SDK here:
+Make sure you have java version "1.7.0_..." or higher. If you don't have Java or you are using an earlier version you can download the latest Java 1.7 SDK here (1.8 should work as well if you'd rather download the latest Java version):
 
 http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
 
@@ -36,7 +36,7 @@ To compile and run the program you first need to be in the NoClickDemo directory
 		press enter.
 
 
-	3. 	The following command will start the program. To run the program again after closing just repeat step 3. If you close the terminal and reopen it make sure to repeat step 1 before attempting step 3 again.
+	3. 	The last command shown below will start the program. To run the program again after closing just repeat step 3. If you close the terminal and reopen it make sure to repeat step 1 before attempting step 3 again.
 	Copy and paste the this command into the terminal:
 
 		java -cp .:lib/noclick.jar barnes.cs130dev.DemoApp
