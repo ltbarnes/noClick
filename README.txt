@@ -2,7 +2,7 @@ NO CLICK
 
 ####################### RUNNING THE DEMO #########################
 
-Download the ZIP file of the noClick project and uncompress it. Go into the master folder and make sure the NoClickDemo folder is there. 
+Download the ZIP file by pressing the "Download ZIP" button on the right side of this web page. Go into the master folder and make sure the NoClickDemo folder is there. 
 
 Open the Terminal.app by finding it in the /Applications/Utilities/ folder or by searching for it using spotlight (cmd + space).
 
