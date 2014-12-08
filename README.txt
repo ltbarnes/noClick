@@ -36,7 +36,7 @@ To compile and run the program you first need to be in the NoClickDemo directory
 		press enter.
 
 
-	3. 	The last command shown below will start the program. To run the program again after closing just repeat step 3. If you close the terminal and reopen it make sure to repeat step 1 before attempting step 3 again.
+	3.	The command shown below will start the program. To run the program again after closing just repeat step 3. If you close the terminal and reopen it make sure to repeat step 1 before attempting step 3 again.
 	Copy and paste the this command into the terminal:
 
 		java -cp .:lib/noclick.jar barnes.cs130dev.DemoApp
