@@ -22,24 +22,27 @@ http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.h
 
 To compile and run the program you first need to be in the NoClickDemo directory.
 
-	1.	In the terminal type 'cd' then space then drag the NoClickDemo folder into the terminal window. The command should look like the example below except /your/path/to/ will be replaced by the files on your specific system.
+	1.
+	In the terminal type 'cd' then space then drag the NoClickDemo folder into the terminal window. The command should look like the example below except /your/path/to/ will be replaced by the files on your specific system.
 
-			cd /your/path/to/NoClickDemo
+		cd /your/path/to/NoClickDemo
 
-		press enter.
+	press enter.
 
 
-	2.	To compile the program copy and paste the following command into the terminal:
+	2.
+	To compile the program copy and paste the following command into the terminal:
 
 		javac -d . -sourcepath src -cp lib/noclick.jar src/barnes/cs130dev/DemoApp.java
 
-		press enter.
+	press enter.
 
 
-	3.	The command shown below will start the program. To run the program again after closing just repeat step 3. If you close the terminal and reopen it make sure to repeat step 1 before attempting step 3 again.
+	3.
+	The command shown below will start the program. To run the program again after closing just repeat step 3. If you close the terminal and reopen it make sure to repeat step 1 before attempting step 3 again.
 	Copy and paste the this command into the terminal:
 
 		java -cp .:lib/noclick.jar barnes.cs130dev.DemoApp
 
-		press enter to start.
+	press enter to start.
 
